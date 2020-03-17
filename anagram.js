@@ -13,6 +13,7 @@ const getAnagram = (string) => {
     shortWord = before + after;
     subAnagrams = getAnagram(shortWord);
 
+    anagrams.push(string[x]);
     for (let y = 0; y < subAnagrams.length; y++) {
       anagrams.push(focus + subAnagrams[y]);
     }

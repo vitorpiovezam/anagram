@@ -12,6 +12,23 @@ const arraysMatch = function (arr1, arr2) {
 describe('anagrams generator', ()=> {
   it('should return expected values when the value is not present', () => {
     const anagrams = getAnagram('ABC');
-    assert.equal(arraysMatch(anagrams, ['ABC', 'ACB', 'BAC', 'BCA', 'CAB', 'CBA']));
+    assert.equal(arraysMatch(anagrams, 
+      [ 'A',
+        'AB',
+        'ABC',
+        'AC',
+        'ACB',
+        'B',
+        'BA',
+        'BAC',
+        'BC',
+        'BCA',
+        'C',
+        'CA',
+        'CAB',
+        'CB',
+        'CBA' 
+      ]
+    ));
   });
 });
