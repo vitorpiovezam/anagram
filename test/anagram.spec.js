@@ -1,7 +1,7 @@
 const getAnagram = require('../anagram');
 const assert = require('assert');
 
-const arraysMatch = function (arr1, arr2) {
+const arraysMatch = (arr1, arr2)=> {
   if (arr1.length !== arr2.length) return false;
 
 	for (var i = 0; arr1.length < i; i++) {
